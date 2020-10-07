@@ -9,13 +9,18 @@ import BeerList from './BeerList';
 function App() {
   return (
     <div>
-      <Router>
-
-        <Switch>
-          <Route exact path='/' component={BeerList} />
-          <Route path='/about' component={About} />
-        </Switch>
-      </Router>
+      <div className="w3-bar w3-black w3-card">
+        <a className="w3-bar-item w3-button w3-padding-large" href="/">Beer list</a>
+        <a className="w3-bar-item w3-button w3-padding-large" href="/about">About</a>
+      </div>
+      <div className="w3-container">
+        <Router>
+          <Switch>
+            <Route class="w3-bar-item w3-button w3-padding-large" exact path='/' component={BeerList} />
+            <Route class="w3-bar-item w3-button w3-padding-large" path='/about' component={About} />
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }

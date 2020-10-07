@@ -8,6 +8,6 @@ interface Props {
 
 export default class Beer extends React.Component<Props> {
   render() {
-    return <li>{this.props.name}</li>;
+    return <span>{this.props.name}</span>;
   }
 }
