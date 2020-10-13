@@ -10,23 +10,30 @@ interface Props {
 
 export default class BeerList extends React.Component<Props> {
   static defaultProps: Props = {
-
     beers: ["despe", "chouffe"]
   };
 
+  /**
+   * little function to add a beer on the press of the enter key
+   * @param event 
+   */
   handleKeyDown = (event: { key: string; }) => {
     if (event.key === 'Enter') {
       this.addBeer();
     }
   }
 
+  /**
+   * Deletes a beer from the props
+   */
   deleteBeer(beerIndex: number) {
-
     this.props.beers.splice(beerIndex, 1);
     this.forceUpdate()
-
   }
 
+  /**
+   * Adds a beer to the props, taking the name written in the input on the page
+   */
   addBeer() {
     let beerInput = document.getElementById("beer") as HTMLInputElement;
 
