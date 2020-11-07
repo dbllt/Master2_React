@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TP React
+
+L'intégralité du tp se trouve sur la branche `master`. 
+
+Pour lancer, un simple `npm run serve`à la racine du projet après avoir installé les dépendances via `npm install` permet de voir l'application en mode dev.
+
+## Auteurs
+
+- Dorian Bouillet
+- Nils Richard
+
+## Composants
+
+Tous les composants sont disponibles dans `src/`
+
+# Information via npx
 
 ## Available Scripts
 
